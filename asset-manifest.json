@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Murder-Mystery/static/css/main.24fcb1a4.css",
+    "main.js": "/Murder-Mystery/static/js/main.87523541.js",
+    "static/media/background.jpg": "/Murder-Mystery/static/media/background.e5a97e03c23a3aea9140.jpg",
+    "static/media/knife.jpeg": "/Murder-Mystery/static/media/knife.383c5c3031b41f4d45e7.jpeg",
+    "static/media/Franklin.jpg": "/Murder-Mystery/static/media/Franklin.57e113c41226d8863dca.jpg",
+    "static/media/scissors.webp": "/Murder-Mystery/static/media/scissors.f545f12f17d72d329843.webp",
+    "static/media/Diane.webp": "/Murder-Mystery/static/media/Diane.ea42740c22060fa5b0a3.webp",
+    "static/media/poison.webp": "/Murder-Mystery/static/media/poison.a0196ceab48048c4dc42.webp",
+    "static/media/Robert.avif": "/Murder-Mystery/static/media/Robert.5321bc0e6a546c9bc4b2.avif",
+    "static/media/Bradley.avif": "/Murder-Mystery/static/media/Bradley.cad0f3252795e926b937.avif",
+    "static/media/pillow.webp": "/Murder-Mystery/static/media/pillow.a75840b76e85846f8f46.webp",
+    "index.html": "/Murder-Mystery/index.html",
+    "main.24fcb1a4.css.map": "/Murder-Mystery/static/css/main.24fcb1a4.css.map",
+    "main.87523541.js.map": "/Murder-Mystery/static/js/main.87523541.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24fcb1a4.css",
+    "static/js/main.87523541.js"
+  ]
+}
