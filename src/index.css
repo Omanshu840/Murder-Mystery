@@ -1,13 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Lines&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
 body {
+  font-family: 'Unbounded', sans-serif;
+  color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  z-index: -1; /* Ensure background is behind other content */
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.welcome-screen .title {
+  color: white;
+  font-family: 'Rubik Lines', system-ui;
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.83);
+  padding: 10px;
+}
+
+.welcome-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.rules-section {
+  margin-top: 20px;
+}
+
+.rules-section .title {
+  font-family: 'Rubik Lines', system-ui;
+  font-size: 50px;
+  text-align: center;
+}
+
+.rules-card {
+  background: rgba(125, 0, 0, 0.5); /* Black tint with alpha transparency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.rules-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hint-card {
+  background: rgba(125, 0, 0, 0.5); /* Black tint with alpha transparency */
+  border-radius: 10px; /* Optional: Add rounded corners for a glass-like effect */
+  padding: 20px; /* Optional: Add padding to the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+.hint-card .id{
+  font-size: 30px;
+  font-family: 'Rubik Lines', system-ui;
+}
+
+.hint-card input {
+  text-align: center;
+}
+
+.hint-card .form-text {
+  color: white;
+}
+
+.hint-card button {
+  margin-top: 20px;
 }

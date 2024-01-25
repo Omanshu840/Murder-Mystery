@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import WelcomeScreen from './components/WelcomeScreen';
+import { screens } from './constants';
+import Rules from './components/Rules';
+import Hints from './components/Hints';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [screen, setScreen] = useState(screens.START);
+  
+    return (
+		<>
+			<div className='background-image'></div>
+			<div className="app">
+				{(screen===screens.START) && <WelcomeScreen setScreen={setScreen} />}
+				{(screen===screens.RULES) && <Rules setScreen={setScreen}/>}
+				{(screen===screens.HINTS) && <Hints setScreen={setScreen}/>}
+			</div>
+		</>
+    );
+};
 
-export default App;
+export default App
